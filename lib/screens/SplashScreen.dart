@@ -1,6 +1,6 @@
 import 'package:dailyapp/screens/HomeScreen.dart';
 import 'package:dailyapp/screens/OnBoardingScreen.dart';
-import 'package:dailyapp/themes/SplashScreenTitle.dart';
+import 'package:dailyapp/themes/SplashScreenStyle.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:dailyapp/utils/PrefManager.dart';

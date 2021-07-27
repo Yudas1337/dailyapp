@@ -1,9 +1,8 @@
-import 'package:dailyapp/screens/HomeScreen.dart';
+import 'package:dailyapp/screens/WelcomeScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dailyapp/models/SlideBoardingScreen.dart';
 import 'package:dailyapp/themes/OnBoardingStyle.dart';
-import 'package:dailyapp/utils/PrefManager.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   @override
@@ -134,11 +133,10 @@ class _OnBoardingScreen extends State<OnBoardingScreen> {
                 _currentPage == _slides.length - 1
                     ? ElevatedButton(
                         onPressed: () {
-                          PrefManager().setOnBoardingScreen();
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomeScreen()),
+                                builder: (context) => WelcomeScreen()),
                           );
                         },
                         child: Text('Get Started'),
