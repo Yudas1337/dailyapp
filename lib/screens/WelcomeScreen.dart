@@ -1,3 +1,5 @@
+import 'package:dailyapp/screens/AssignmentScreen.dart';
+import 'package:dailyapp/screens/HomeScreen.dart';
 import 'package:dailyapp/themes/WelcomeScreenStyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -58,8 +60,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => WelcomeScreen()),
+                        MaterialPageRoute(builder: (context) => HomeScreen()),
                       );
                     },
                     child: Text('Get Started'),
